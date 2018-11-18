@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="hsy-arap" />
+        <module name="hsy-arap-api" />
+        <module name="hsy-register-center" />
+        <module name="hsy-sales" />
+        <module name="hsy-sales-api" />
+        <module name="hsy-stock" />
+        <module name="hsy-stock-api" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>
