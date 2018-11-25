@@ -2,8 +2,6 @@ package com.rqb.hsy.controller;
 
 
 import com.alibaba.fastjson.JSONObject;
-import com.netflix.discovery.converters.Auto;
-import com.rqb.hsy.client.ArapClient;
 import com.rqb.hsy.service.GoodsIsuueService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -21,16 +19,12 @@ public class GoodsIsuueController {
     @Autowired
     GoodsIsuueService goodsIsuueService;
 
-    @Autowired
-    ArapClient arapClient;
-
     @PostMapping(value = "",consumes = "application/json;charset=UTF-8")
     @ResponseBody
     public Long save(@RequestBody JSONObject jsonObject, HttpServletRequest request){
         System.out.println("GoodsIsuue Save start......");
-        goodsIsuueService.save(jsonObject,request);
 
-        arapClient.save(jsonObject,request);
+        goodsIsuueService.save(jsonObject,request);
 
         System.out.println("GoodsIsuue Save end......");
         return 0l;

@@ -1,22 +1,19 @@
-package com.rqb.hsy.service;
-
+package com.rqb.hsy.services;
 
 import com.alibaba.fastjson.JSONObject;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.RequestBody;
 
 import javax.servlet.http.HttpServletRequest;
 
-@Service("goodsIsuueService")
-public class GoodsIsuueService {
+@Service("arapPaymentService")
+public class ArapPaymentService {
 
-    @Autowired
-    ArapService arapService;
 
     public Long save(@RequestBody JSONObject jsonObject, HttpServletRequest request){
+        System.out.println("Payment Save Service start ......");
 
-        arapService.save(jsonObject,request);
+        System.out.println("Payment Save Service end......");
         return 0l;
     }
 
